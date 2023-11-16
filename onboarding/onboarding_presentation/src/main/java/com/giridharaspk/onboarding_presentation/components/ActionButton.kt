@@ -7,6 +7,7 @@ import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import com.giridharaspk.core_ui.LocalSpacing
@@ -20,7 +21,7 @@ fun ActionButton(
     textStyle: TextStyle = MaterialTheme.typography.button
 ) {
     Button(
-        onClick = { onClick },
+        onClick = { onClick() },
         enabled = isEnabled,
         modifier = modifier,
         shape = RoundedCornerShape(30.dp)
@@ -28,7 +29,7 @@ fun ActionButton(
         Text(
             text = text,
             style = textStyle,
-            color = MaterialTheme.colors.primary,
+            color = Color.White,
             modifier = Modifier.padding(LocalSpacing.current.spaceSmall)
         )
     }
