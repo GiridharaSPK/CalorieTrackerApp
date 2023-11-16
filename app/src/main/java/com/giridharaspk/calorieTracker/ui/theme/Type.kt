@@ -1,4 +1,4 @@
-package com.giridharaspk.calorieTrackerprep.ui.theme
+package com.giridharaspk.calorieTracker.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
