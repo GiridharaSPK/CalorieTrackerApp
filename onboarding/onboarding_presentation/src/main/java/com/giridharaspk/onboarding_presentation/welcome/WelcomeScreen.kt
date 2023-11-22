@@ -13,7 +13,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
 import com.giridharaspk.core.R
-import com.giridharaspk.core.UiEvent
+import com.giridharaspk.core.util.UiEvent
 import com.giridharaspk.core.navigation.Route
 import com.giridharaspk.core_ui.LocalSpacing
 import com.giridharaspk.onboarding_presentation.components.ActionButton
