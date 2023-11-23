@@ -18,6 +18,7 @@ import com.giridharaspk.onboarding_presentation.age.AgeScreen
 import com.giridharaspk.onboarding_presentation.gender.GenderScreen
 import com.giridharaspk.onboarding_presentation.goal.GoalScreen
 import com.giridharaspk.onboarding_presentation.height.HeightScreen
+import com.giridharaspk.onboarding_presentation.nutrition_goal.NutritionGoalScreen
 import com.giridharaspk.onboarding_presentation.weight.WeightScreen
 import com.giridharaspk.onboarding_presentation.welcome.WelcomeScreen
 import dagger.hilt.android.AndroidEntryPoint
@@ -73,9 +74,10 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(Route.NUTRITION_GOAL) {
-//                            NutritionGoalScreen(
-//                                onNavigate = navController::navigate
-//                            )
+                            NutritionGoalScreen(
+                                scaffoldState,
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.TRACKER_OVERVIEW) {
 

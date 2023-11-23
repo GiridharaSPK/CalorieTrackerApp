@@ -42,7 +42,7 @@ class DefaultPref @Inject constructor(private val sharedPref: SharedPreferences)
         sharedPref.edit().putString(KEY_GOAL_TYPE, goal.name).apply()
     }
 
-    override fun saveCarbRation(carbRatio: Float) {
+    override fun saveCarbRatio(carbRatio: Float) {
         sharedPref.edit().putFloat(KEY_CARB_RATIO, carbRatio).apply()
     }
 

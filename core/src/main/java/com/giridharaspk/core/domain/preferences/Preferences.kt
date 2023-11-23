@@ -12,7 +12,7 @@ interface Preferences {
     fun saveAge(age : Int)
     fun saveActivityLevel(activity : ActivityLevel)
     fun saveGoalType(goal : GoalType)
-    fun saveCarbRation(carbRatio : Float)
+    fun saveCarbRatio(carbRatio : Float)
     fun saveProteinRatio(proteinRatio : Float)
     fun saveFatRatio(fatRatio : Float)
 

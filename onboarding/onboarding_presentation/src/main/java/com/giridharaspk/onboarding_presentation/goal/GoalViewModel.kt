@@ -5,7 +5,6 @@ import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.giridharaspk.core.domain.model.ActivityLevel
 import com.giridharaspk.core.domain.model.GoalType
 import com.giridharaspk.core.domain.preferences.Preferences
 import com.giridharaspk.core.navigation.Route
@@ -23,7 +22,7 @@ class GoalViewModel @Inject constructor(
     var selectedGoal by mutableStateOf<GoalType>(GoalType.KeepWeight)
         private set
 
-    //exp with stateflow, sharedflow
+    //todo check - exp with stateflow, sharedFlow
     private val _uiEvent = Channel<UiEvent> { }
     val uiEvent = _uiEvent.receiveAsFlow()
 
