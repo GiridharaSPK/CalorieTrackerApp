@@ -9,21 +9,23 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38dce4e-23fc-44a2-bbc8-9b22bde5a611" name="Changes" comment="added goal feature - use onboarding">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_domain/src/main/java/com/fetch/onboarding_domain/NutritionGoalValidationUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_domain/src/main/java/com/fetch/onboarding_domain/OnBoardingModule.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/nutrition_goal/NutritionGoalEvent.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/nutrition_goal/NutritionGoalScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/nutrition_goal/NutritionGoalState.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/nutrition_goal/NutritionGoalViewModel.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="a38dce4e-23fc-44a2-bbc8-9b22bde5a611" name="Changes" comment="setup openFoodApi (retrofit, hilt, okhttp) and local db (room)">
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_data/src/main/java/com/giridharaspk/tracker_data/mapper/TrackableFoodMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_data/src/main/java/com/giridharaspk/tracker_data/mapper/TrackedFoodMapper.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_data/src/main/java/com/giridharaspk/tracker_data/repository/TrackerRepositoryImpl.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/di/TrackerDomainModule.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/model/MealType.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/model/TrackableFood.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/model/TrackedFood.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/repository/TrackerRepository.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/CalculateMealNutrientsUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/DeleteTrackedFoodUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/GetFoodsForDateUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/SearchFoodUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/TrackFoodUseCase.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tracker/tracker_domain/src/main/java/com/giridharaspk/tracker_domain/use_case/TrackerUseCases.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/DefaultPref.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/DefaultPref.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/domain/preferences/Preferences.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/domain/preferences/Preferences.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal/GoalViewModel.kt" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal/GoalViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tracker/tracker_data/src/main/java/com/giridharaspk/tracker_data/di/TrackerDataModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/tracker/tracker_data/src/main/java/com/giridharaspk/tracker_data/di/TrackerDataModule.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,13 +58,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Object" />
-        <option value="Kotlin Interface" />
         <option value="Kotlin Sealed Interface" />
         <option value="valueResourceFile" />
-        <option value="Kotlin File" />
         <option value="Kotlin Sealed Class" />
+        <option value="Kotlin Object" />
+        <option value="Kotlin Interface" />
         <option value="Kotlin Data Class" />
+        <option value="Kotlin File" />
         <option value="Kotlin Class" />
       </list>
     </option>
@@ -103,6 +105,8 @@
       <recent name="$PROJECT_DIR$/core-ui" />
     </key>
     <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.giridharaspk.tracker_domain.repository" />
+      <recent name="com.giridharaspk.tracker_data.local.dao" />
       <recent name="com.fetch.onboarding_domain" />
       <recent name="com.giridharaspk.core.util" />
     </key>
@@ -274,7 +278,21 @@
       <option name="project" value="LOCAL" />
       <updated>1700724188500</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="added nutrition Goal feature - user onboarding">
+      <created>1700753257831</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1700753257831</updated>
+    </task>
+    <task id="LOCAL-00014" summary="setup openFoodApi (retrofit, hilt, okhttp) and local db (room)">
+      <created>1700755980109</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1700755980109</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -316,6 +334,8 @@
     <MESSAGE value="setup prefs - Preferences.kt and hilt" />
     <MESSAGE value="added age, weight and height modules in user onboarding modules and corresp core classes - composables, uievent and uitext" />
     <MESSAGE value="added goal feature - use onboarding" />
-    <option name="LAST_COMMIT_MESSAGE" value="added goal feature - use onboarding" />
+    <MESSAGE value="added nutrition Goal feature - user onboarding" />
+    <MESSAGE value="setup openFoodApi (retrofit, hilt, okhttp) and local db (room)" />
+    <option name="LAST_COMMIT_MESSAGE" value="setup openFoodApi (retrofit, hilt, okhttp) and local db (room)" />
   </component>
 </project>
