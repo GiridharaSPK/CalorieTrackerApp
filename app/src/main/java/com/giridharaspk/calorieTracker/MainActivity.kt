@@ -13,8 +13,10 @@ import androidx.navigation.compose.rememberNavController
 import com.giridharaspk.calorieTracker.navigation.navigate
 import com.giridharaspk.calorieTracker.ui.theme.CalorieTrackerTheme
 import com.giridharaspk.core.navigation.Route
+import com.giridharaspk.onboarding_presentation.activity_level.ActivityLevelScreen
 import com.giridharaspk.onboarding_presentation.age.AgeScreen
 import com.giridharaspk.onboarding_presentation.gender.GenderScreen
+import com.giridharaspk.onboarding_presentation.goal.GoalScreen
 import com.giridharaspk.onboarding_presentation.height.HeightScreen
 import com.giridharaspk.onboarding_presentation.weight.WeightScreen
 import com.giridharaspk.onboarding_presentation.welcome.WelcomeScreen
@@ -31,7 +33,7 @@ class MainActivity : ComponentActivity() {
                 Scaffold(
                     modifier = Modifier.fillMaxSize(),
                     scaffoldState = scaffoldState
-                ) {
+                ) { padding ->
                     NavHost(
                         navController = navController,
                         startDestination = Route.WELCOME
@@ -60,14 +62,20 @@ class MainActivity : ComponentActivity() {
                                 onNavigate = navController::navigate
                             )
                         }
-                        composable(Route.NUTRIENT_GOAL) {
-
-                        }
                         composable(Route.ACTIVITY) {
-
+                            ActivityLevelScreen(
+                                onNavigate = navController::navigate
+                            )
                         }
                         composable(Route.GOAL) {
-
+                            GoalScreen(
+                                onNavigate = navController::navigate
+                            )
+                        }
+                        composable(Route.NUTRITION_GOAL) {
+//                            NutritionGoalScreen(
+//                                onNavigate = navController::navigate
+//                            )
                         }
                         composable(Route.TRACKER_OVERVIEW) {
 

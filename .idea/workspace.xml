@@ -9,27 +9,17 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a38dce4e-23fc-44a2-bbc8-9b22bde5a611" name="Changes" comment="setup prefs - Preferences.kt and hilt">
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/domain/use_case/FilterOutDigitsUseCase.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/util/UiText.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/age/AgeScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/age/AgeViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/components/SelectableButton.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/components/UnitTextField.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/gender/GenderScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/gender/GenderViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/height/HeightScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/height/HeightViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/weight/WeightScreen.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/weight/WeightViewModel.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="a38dce4e-23fc-44a2-bbc8-9b22bde5a611" name="Changes" comment="added age, weight and height modules in user onboarding modules and corresp core classes - composables, uievent and uitext">
+      <change afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/activity_level/ActivityLevelScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/activity_level/ActivityLevelViewModel.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal/GoalScreen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal/GoalViewModel.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/di/AppModule.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/di/AppModule.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/navigation/NavControllerExt.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/navigation/NavControllerExt.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/ui/theme/Theme.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/giridharaspk/calorieTracker/ui/theme/Theme.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/util/UiEvent.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/util/UiEvent.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/welcome/WelcomeScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/welcome/WelcomeScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/navigation/Route.kt" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/com/giridharaspk/core/navigation/Route.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/gender/GenderScreen.kt" beforeDir="false" afterPath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/gender/GenderScreen.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/res/values/strings.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +67,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2YEnhNpRT7lULhGdgZW8MbobP6H" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -90,9 +80,10 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.cidr.known.project.marker": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cidr.known.project.marker": "true",
     "com.google.services.firebase.aqiPopupShown": "true",
-    "last_opened_file_path": "/Users/giridharaspk/AndroidStudioProjects/CalorieTrackerApp/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/weight",
+    "last_opened_file_path": "/Users/giridharaspk/AndroidStudioProjects/CalorieTrackerApp/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal",
     "project.structure.last.edited": "SDK Location",
     "project.structure.proportion": "0.17",
     "project.structure.side.proportion": "0.0",
@@ -101,6 +92,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/goal" />
+      <recent name="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/activity_level" />
       <recent name="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/weight" />
       <recent name="$PROJECT_DIR$/onboarding/onboarding_presentation/src/main/java/com/giridharaspk/onboarding_presentation/height" />
       <recent name="$PROJECT_DIR$/core-ui" />
@@ -109,6 +102,8 @@
       <recent name="com.giridharaspk.core.util" />
     </key>
     <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="com.giridharaspk.onboarding_presentation.nutrient_goal" />
+      <recent name="com.giridharaspk.onboarding_presentation.activity_level" />
       <recent name="com.giridharaspk.onboarding_presentation.height" />
       <recent name="com.giridharaspk.onboarding_presentation.weight" />
     </key>
@@ -260,7 +255,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700688514857</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="added age, weight and height modules in user onboarding modules and corresp core classes - composables, uievent and uitext">
+      <created>1700722982770</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1700722982770</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -300,6 +302,7 @@
     <MESSAGE value="added WelcomeScreen.kt and NavHost in onboarding_pres&#10;and updated gitignore" />
     <MESSAGE value="updated gitignore" />
     <MESSAGE value="setup prefs - Preferences.kt and hilt" />
-    <option name="LAST_COMMIT_MESSAGE" value="setup prefs - Preferences.kt and hilt" />
+    <MESSAGE value="added age, weight and height modules in user onboarding modules and corresp core classes - composables, uievent and uitext" />
+    <option name="LAST_COMMIT_MESSAGE" value="added age, weight and height modules in user onboarding modules and corresp core classes - composables, uievent and uitext" />
   </component>
 </project>
