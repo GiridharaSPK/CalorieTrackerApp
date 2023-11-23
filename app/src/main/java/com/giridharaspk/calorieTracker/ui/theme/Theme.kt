@@ -41,6 +41,10 @@ fun CalorieTrackerTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Co
     } else {
         LightColorPalette
     }
+    /* //todo check - why this CompositionLocalProvider?
+     * This ensures that any composable within this CompositionLocalProvider
+     * block can access the spacing values defined in customSpacingValues.
+     */
     CompositionLocalProvider (LocalSpacing provides Dimensions()) {
         MaterialTheme(
             colors = colors,

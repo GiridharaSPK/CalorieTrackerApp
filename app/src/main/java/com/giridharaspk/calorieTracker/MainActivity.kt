@@ -3,53 +3,78 @@ package com.giridharaspk.calorieTracker
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.fillMaxSize
+import androidx.compose.material.Scaffold
+import androidx.compose.material.rememberScaffoldState
+import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.giridharaspk.calorieTracker.navigation.navigate
 import com.giridharaspk.calorieTracker.ui.theme.CalorieTrackerTheme
 import com.giridharaspk.core.navigation.Route
+import com.giridharaspk.onboarding_presentation.age.AgeScreen
+import com.giridharaspk.onboarding_presentation.gender.GenderScreen
+import com.giridharaspk.onboarding_presentation.height.HeightScreen
+import com.giridharaspk.onboarding_presentation.weight.WeightScreen
 import com.giridharaspk.onboarding_presentation.welcome.WelcomeScreen
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
             CalorieTrackerTheme {
                 val navController = rememberNavController()
-                NavHost(
-                    navController = navController,
-                    startDestination = Route.WELCOME
+                val scaffoldState = rememberScaffoldState()
+                Scaffold(
+                    modifier = Modifier.fillMaxSize(),
+                    scaffoldState = scaffoldState
                 ) {
-                    composable(Route.WELCOME) {
-                        WelcomeScreen(onNavigate = navController::navigate)
-                    }
-                    composable(Route.AGE) {
+                    NavHost(
+                        navController = navController,
+                        startDestination = Route.WELCOME
+                    ) {
+                        composable(Route.WELCOME) {
+                            WelcomeScreen(onNavigate = navController::navigate) //todo check - why this structure?
+                        }
+                        composable(Route.GENDER) {
+                            GenderScreen(onNavigate = navController::navigate)
+                        }
+                        composable(Route.AGE) {
+                            AgeScreen(
+                                scaffoldState,
+                                onNavigate = navController::navigate
+                            )
+                        }
+                        composable(Route.HEIGHT) {
+                            HeightScreen(
+                                scaffoldState,
+                                onNavigate = navController::navigate
+                            )
+                        }
+                        composable(Route.WEIGHT) {
+                            WeightScreen(
+                                scaffoldState,
+                                onNavigate = navController::navigate
+                            )
+                        }
+                        composable(Route.NUTRIENT_GOAL) {
 
-                    }
-                    composable(Route.GENDER) {
+                        }
+                        composable(Route.ACTIVITY) {
 
-                    }
-                    composable(Route.HEIGHT) {
+                        }
+                        composable(Route.GOAL) {
 
-                    }
-                    composable(Route.WEIGHT) {
+                        }
+                        composable(Route.TRACKER_OVERVIEW) {
 
-                    }
-                    composable(Route.NUTRIENT_GOAL) {
+                        }
+                        composable(Route.SEARCH) {
 
-                    }
-                    composable(Route.ACTIVITY) {
-
-                    }
-                    composable(Route.GOAL) {
-
-                    }
-                    composable(Route.TRACKER_OVERVIEW) {
-
-                    }
-                    composable(Route.SEARCH) {
-
+                        }
                     }
                 }
             }
