@@ -1,4 +1,4 @@
-package com.giridharaspk.core
+package com.giridharaspk.core.data.preferences
 
 import android.content.SharedPreferences
 import com.giridharaspk.core.domain.model.ActivityLevel
@@ -76,6 +76,16 @@ class DefaultPref @Inject constructor(private val sharedPref: SharedPreferences)
             fatRatio = fatRatio,
             proteinRatio = proteinRatio,
         )
+    }
+
+    override fun saveShowOnboarding(show: Boolean) {
+        sharedPref.edit()
+            .putBoolean(Preferences.KEY_SHOW_ONBOARDING, show)
+            .apply()
+    }
+
+    override fun loadShowOnboarding(): Boolean {
+        return sharedPref.getBoolean(Preferences.KEY_SHOW_ONBOARDING, true)
     }
 
 }
