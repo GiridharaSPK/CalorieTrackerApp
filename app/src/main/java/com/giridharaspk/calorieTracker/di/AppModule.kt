@@ -3,7 +3,7 @@ package com.giridharaspk.calorieTracker.di
 import android.app.Application
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
-import com.giridharaspk.core.DefaultPref
+import com.giridharaspk.core.data.preferences.DefaultPref
 import com.giridharaspk.core.domain.preferences.Preferences
 import com.giridharaspk.core.domain.use_case.FilterOutDigitsUseCase
 import dagger.Module

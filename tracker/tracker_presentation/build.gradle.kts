@@ -16,5 +16,4 @@ dependencies {
 
     implementation(Coil.coilCompose)
 
-
 }

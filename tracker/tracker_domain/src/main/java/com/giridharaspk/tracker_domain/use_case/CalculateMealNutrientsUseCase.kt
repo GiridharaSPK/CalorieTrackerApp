@@ -5,6 +5,9 @@ import com.giridharaspk.core.domain.model.Gender
 import com.giridharaspk.core.domain.model.GoalType
 import com.giridharaspk.core.domain.model.UserInfo
 import com.giridharaspk.core.domain.preferences.Preferences
+import com.giridharaspk.core.util.Constants.caloriesPerCarb
+import com.giridharaspk.core.util.Constants.caloriesPerFat
+import com.giridharaspk.core.util.Constants.caloriesPerProtein
 import com.giridharaspk.tracker_domain.model.MealType
 import com.giridharaspk.tracker_domain.model.TrackedFood
 import kotlin.math.roundToInt
@@ -12,10 +15,6 @@ import kotlin.math.roundToInt
 class CalculateMealNutrientsUseCase(
     private val preferences: Preferences
 ) {
-
-    val caloriesPerCarb = 4f
-    val caloriesPerProtein = 4f
-    val caloriesPerFat = 9f
 
     operator fun invoke(trackedFoods: List<TrackedFood>): Result {
         val allNutrients = trackedFoods

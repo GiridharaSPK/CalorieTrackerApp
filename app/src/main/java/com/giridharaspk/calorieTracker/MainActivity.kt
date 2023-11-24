@@ -21,6 +21,7 @@ import com.giridharaspk.onboarding_presentation.height.HeightScreen
 import com.giridharaspk.onboarding_presentation.nutrition_goal.NutritionGoalScreen
 import com.giridharaspk.onboarding_presentation.weight.WeightScreen
 import com.giridharaspk.onboarding_presentation.welcome.WelcomeScreen
+import com.giridharaspk.tracker_presentation.tracker_overview.TrackerOverviewScreen
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -80,7 +81,7 @@ class MainActivity : ComponentActivity() {
                             )
                         }
                         composable(Route.TRACKER_OVERVIEW) {
-
+                            TrackerOverviewScreen(onNavigate = navController::navigate)
                         }
                         composable(Route.SEARCH) {
 

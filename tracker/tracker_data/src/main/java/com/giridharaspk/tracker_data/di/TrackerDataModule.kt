@@ -44,7 +44,7 @@ object TrackerDataModule {
 
     @Provides
     @Singleton
-    fun provideTrackerDb(@ApplicationContext app: Application): TrackerDatabase {
+    fun provideTrackerDb(app: Application): TrackerDatabase {
         return Room.databaseBuilder(
             app,
             TrackerDatabase::class.java,
